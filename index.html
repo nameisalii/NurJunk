@@ -14,8 +14,9 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #2c5530;
             overflow-x: hidden;
+            background: white;
         }
 
         /* Header Styles */
@@ -37,7 +38,7 @@
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1rem; /* Reduced padding for better centering */
+            padding: 0 1rem;
         }
 
         .logo {
@@ -60,14 +61,14 @@
 
         .nav-menu a {
             text-decoration: none;
-            color: #333;
+            color: #2c5530;
             font-weight: 500;
             transition: color 0.3s ease;
             position: relative;
         }
 
         .nav-menu a:hover {
-            color: #2c5530;
+            color: #4a7c59;
         }
 
         .nav-menu a::after {
@@ -88,31 +89,14 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, rgba(76, 175, 80, 0.3) 0%, rgba(139, 195, 74, 0.3) 100%), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><defs><pattern id="green-pattern" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M5,1 Q7.5,2.5 9,5 Q7.5,7.5 5,9 Q2.5,7.5 1,5 Q2.5,2.5 5,1" fill="rgba(76,175,80,0.2)"/><path d="M5,5 Q6,4 7.5,5 Q6,6 5,5" fill="rgba(139,195,74,0.3)"/></pattern></defs><rect width="50" height="50" fill="url(%23green-pattern)"/></svg>');
+            background: #f5f5dc; /* Changed to beige */
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white;
+            color: #2c5530;
             position: relative;
             overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><defs><pattern id="leaves" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M5,1 Q7.5,2.5 9,5 Q7.5,7.5 5,9 Q2.5,7.5 1,5 Q2.5,2.5 5,1" fill="rgba(76,175,80,0.1)"/><path d="M5,5 Q6,4 7.5,5 Q6,6 5,5" fill="rgba(139,195,74,0.2)"/></pattern></defs><rect width="50" height="50" fill="url(%23leaves)"/></svg>');
-            animation: float 20s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
         }
 
         .hero-content {
@@ -150,8 +134,8 @@
             padding: 5rem 0;
             max-width: 1200px;
             margin: 0 auto;
-            padding-left: 1rem; /* Adjusted for centering */
-            padding-right: 1rem; /* Adjusted for centering */
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         .section-title {
@@ -160,18 +144,6 @@
             margin-bottom: 3rem;
             color: #2c5530;
             position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 2px;
         }
 
         /* About Section */
@@ -185,7 +157,7 @@
         .about-text {
             font-size: 1.2rem;
             line-height: 1.8;
-            color: #555;
+            color: #2c5530;
         }
 
         .about-image {
@@ -203,8 +175,8 @@
 
         /* Services Section */
         .services {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 5rem 0; /* Removed negative margins for centering */
+            background: white;
+            padding: 5rem 0;
             text-align: center;
         }
 
@@ -218,29 +190,28 @@
             margin-right: auto;
         }
 
+        .service-count {
+            font-size: 1.2rem;
+            color: #2c5530;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
         .service-card {
             background: white;
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: 1px solid #2c5530;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         .service-card h3 {
@@ -250,7 +221,7 @@
         }
 
         .service-card p {
-            color: #666;
+            color: #2c5530;
             line-height: 1.6;
         }
 
@@ -270,24 +241,12 @@
             border-radius: 10px;
         }
 
-        .service-icon::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
-            border-radius: 10px;
-            z-index: 1;
-        }
-
         .service-icon span {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
+            color: #2c5530;
             font-size: 0.9rem;
             text-align: center;
             z-index: 2;
@@ -321,14 +280,14 @@
             top: -10px;
             left: 20px;
             font-size: 4rem;
-            color: #667eea;
+            color: #2c5530;
             line-height: 1;
         }
 
         .review-text {
             margin-bottom: 1rem;
             font-style: italic;
-            color: #555;
+            color: #2c5530;
             line-height: 1.6;
         }
 
@@ -360,7 +319,7 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
-            color: #333;
+            color: #2c5530;
         }
 
         .form-group input,
@@ -371,13 +330,14 @@
             border-radius: 8px;
             font-size: 1rem;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            color: #2c5530;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #2c5530;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
         }
 
         .form-group textarea {
@@ -388,7 +348,7 @@
         .submit-btn {
             width: 100%;
             padding: 1rem 2rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: #2c5530;
             color: white;
             border: none;
             border-radius: 8px;
@@ -400,7 +360,7 @@
 
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
         }
 
         /* Responsive Design */
@@ -487,10 +447,11 @@
 
     <section id="services" class="services">
         <h2 class="section-title">Our Services</h2>
+        <div class="service-count">We offer 7 specialized junk removal services</div>
         <div class="services-grid">
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Residential Junk Removal">
+                    <img src="https://media.phillyvoice.com/media/images/092721_JDog_Two.2e16d0ba.fill-735x490.jpg">
                     <span>Residential Junk Removal</span>
                 </div>
                 <h3>Residential Junk Removal</h3>
@@ -498,7 +459,7 @@
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Construction Debris Removal">
+                    <img src="https://business.yelp.com/wp-content/uploads/2023/04/junk-removal-business-cropped-1024x517.webp" alt="Construction Debris Removal">
                     <span>Construction Debris</span>
                 </div>
                 <h3>Construction Debris Removal</h3>
@@ -506,7 +467,7 @@
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Yard Waste Removal">
+                    <img src="https://junk-boss.com/wp-content/uploads/2020/03/residential-02-scaled.jpg" alt="Yard Waste Removal">
                     <span>Yard Waste</span>
                 </div>
                 <h3>Yard Waste Removal</h3>
@@ -514,7 +475,7 @@
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Furniture Removal">
+                    <img src="https://severnaparkvoice.com/uploads/original/20250211-161102-369-Tacyn%20Junk%20Knights%201.jpg" alt="Furniture Removal">
                     <span>Furniture Removal</span>
                 </div>
                 <h3>Furniture Removal</h3>
@@ -522,7 +483,7 @@
                 </div>
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Appliance Removal">
+                    <img src="https://res.cloudinary.com/liaison-inc/image/upload/f_auto/q_auto,w_1200/v1744030181/content/homeguide/homeguide-old-items-stacked-for-junk-removal-company-to-pick-up.jpg" alt="Appliance Removal">
                     <span>Appliance Removal</span>
                 </div>
                 <h3>Appliance Removal</h3>
@@ -530,7 +491,7 @@
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Estate Cleanouts">
+                    <img src="https://raleighjunkremovalservices.com/wp-content/uploads/2024/09/image-01.jpg" alt="Estate Cleanouts">
                     <span>Estate Cleanouts</span>
                 </div>
                 <h3>Estate Cleanouts</h3>
@@ -538,7 +499,7 @@
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">
-                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="E-Waste Recycling">
+                    <img src="https://junkrelief.com/wp-content/uploads/2022/04/BE09DAB3-4EFB-494A-B08A-076B0FA89A90_1_105_c-e1651246003476.jpeg.webp" alt="E-Waste Recycling">
                     <span>E-Waste Recycling</span>
                 </div>
                 <h3>E-Waste Recycling</h3>
